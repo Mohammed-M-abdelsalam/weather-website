@@ -95,4 +95,10 @@ function main(){
   });
 }
 
-main();
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.querySelector('.loader').classList.remove('d-none');
+  main();
+  setTimeout(() => {
+    document.querySelector('.loader').classList.add('d-none');
+  }, 2500)
+});
