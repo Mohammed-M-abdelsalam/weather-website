@@ -19,6 +19,7 @@ function getUserLocation(){
       return fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=10679f3c4389414088904eac1bc3277b`)
       .then(res => res.json())
       .then(data => {
+        document.querySelector('.current-loading').classList.add('d-none');
         resolve(data.results[0].components.country);
       }).catch(err => reject(err));
     });

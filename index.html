@@ -10,8 +10,8 @@
     <script src="assets/js/bootstrap.bundle.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </head>
-<body>
-    <div class="loader d-none position-absolute w-100 h-100 d-flex justify-content-center align-items-center z-3" style="background-color: #9dc1c4;">
+<body class="position-relative">
+    <div class="loader d-none position-fixed w-100 h-100 d-flex justify-content-center align-items-center z-3" style="background-color: #9dc1c4;">
         <div class="loader-text position-relative fw-bold fs-1 animate__animated animate__hinge animate__delay-1s">
             welcome
         </div>
@@ -26,7 +26,9 @@
                     <button class="position-absolute top-0 end-0 fw-medium btn btn-primary rounded-start-0">Search</button>
                 </form>
                 <h1 class="fw-bold text-info-emphasis">weather state</h1>
-                <div id="current-root" style="min-height: 300px;"></div>
+                <div id="current-root" style="min-height: 300px;">
+                    <div class="current-loading">looking for your location</div>
+                </div>
             </div>
             <div style="min-height: 300px;" class="bg-blur container p-5 position-relative rounded-top-5">
                 <h2>Forecast</h2>
