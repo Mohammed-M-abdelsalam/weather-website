@@ -1,0 +1,12 @@
+body{
+    min-height: 100vh;
+    background-image: url('../images/weather.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-blur{
+    backdrop-filter: blur(50px);
+}

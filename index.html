@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="error d-none text-center py-3 bg-danger-subtle text-danger"></div>
+    <div class="container pt-5">
+        <section class="row row-cols-md-2">
+            <div>
+                <form id="search-form" class="position-relative my-5 me-3">
+                    <input type="text" class="form-control shadow" name="location" placeholder="Search with location....">
+                    <button class="position-absolute top-0 end-0 fw-medium btn btn-primary rounded-start-0">Search</button>
+                </form>
+                <h1 class="fw-bold text-info-emphasis">weather state</h1>
+                <div id="current-root" style="min-height: 300px;"></div>
+            </div>
+            <div class="bg-blur container p-5 position-relative rounded-top-5">
+                <h2>Forecast</h2>
+                <div id="forecast-root" class="row row-cols-1 g-3"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
